@@ -33,7 +33,7 @@ namespace Mashinka
                     break;
 
                 case 2:
-                    Console.WriteLine("Состояние - Dd inside");
+                    Console.WriteLine("Состояние - Ded inside");
                     break;
 
                 case 3:

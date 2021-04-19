@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="City.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="Tank.cs" />
     <Compile Include="Transport.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +55,7 @@
     <None Include="Properties\App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Group.txt" />
     <Content Include="Data\Persons.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

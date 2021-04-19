@@ -18,7 +18,29 @@ namespace Mashinka
 
         public void Shoot()
         {
-            
+            Random rand = new Random();
+            switch (rand.Next(0,5))
+            {
+                case 0:
+                    Console.WriteLine("Никого не убило... а жаль");
+                    break;
+
+                case 1:
+                    Console.WriteLine("Никого не убило... а жаль");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Никого не убило... а жаль");
+                    break;
+
+                case 3:
+                    Console.WriteLine("Никого не убило... а жаль");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Никого не убило... а жаль");
+                    break;
+            }
         }
 
     }

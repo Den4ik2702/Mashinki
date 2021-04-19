@@ -14,7 +14,6 @@ namespace Mashinka
         protected string fuel;
         protected int time;
 
-        public Transport() { }
         public Transport(string mark, int speed, string color, string fuel, int time)
         {
             this.mark = mark;
