@@ -1,0 +1,7 @@
+C:\Coding\VScodes\Mashinki\MashinkaProg1\bin\Debug\MashinkaProg1.exe.config
+C:\Coding\VScodes\Mashinki\MashinkaProg1\bin\Debug\MashinkaProg1.exe
+C:\Coding\VScodes\Mashinki\MashinkaProg1\bin\Debug\MashinkaProg1.pdb
+C:\Coding\VScodes\Mashinki\MashinkaProg1\obj\Debug\MashinkaProg1.csprojAssemblyReference.cache
+C:\Coding\VScodes\Mashinki\MashinkaProg1\obj\Debug\MashinkaProg1.csproj.CoreCompileInputs.cache
+C:\Coding\VScodes\Mashinki\MashinkaProg1\obj\Debug\MashinkaProg1.exe
+C:\Coding\VScodes\Mashinki\MashinkaProg1\obj\Debug\MashinkaProg1.pdb
