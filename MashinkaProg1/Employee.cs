@@ -6,34 +6,28 @@ using System.Threading.Tasks;
 
 namespace Mashinka
 {
-    class Student : Person
+    class Employee : Person
     {
+        protected int salary;
         protected string profession;
-        protected int course;
-        protected string group;
-        public int studTime;
-        public Student(string name, int age, int alive, bool sex, string _profession, int _course, string _group, int _studTime)
+        protected int cash;
+        public int workTime;
+        public Employee(string name, int age, int alive, bool sex, string _profession, int _salary, int _workTime, int _cash) 
             : base(name, age, alive, sex)
         {
             profession = _profession;
-            course = _course;
-            group = _group;
-            studTime = _studTime;
+            salary = _salary;
+            workTime = _workTime;
+            cash = _cash;
         }
-
-        public void Learn()
+        public void Work()
         {
-            if (alive == 3) { return; }
-            studTime += 1;
-            Console.WriteLine($"Студент {name} учится. {studTime}/100 студ часов");
-            if (studTime % 25 == 0) 
-            {
-                course++;
-                Console.WriteLine($"Студент {name} перешел на {course} курс");
-            }
+            if(alive == 3) { return; }
+            workTime += 1;
+            //Console.WriteLine($"Работник {name} работает. {salary}P денег заработано");
+            cash += salary;
         }
-
-        public string StudGetInfo()
+        public string WorkGetInfo()
         {
             string info = "";
             switch (alive)
@@ -61,9 +55,9 @@ namespace Mashinka
                 info += ($"Пол: Женский\n");
 
             info += ($"Профессия: {profession}\n");
-            info += ($"Курс: {course}\n");
-            info += ($"Группа: {group}\n");
-            info += ($"Кол-во академ часов: {studTime}/100\n");
+            info += ($"Зарплата: {salary}P\n");
+            info += ($"Накопления: {cash}P\n");
+            info += ($"Кол-во рабочих часов: {workTime}\n");
             return info;
         }
     }

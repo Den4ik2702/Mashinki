@@ -20,34 +20,72 @@ namespace Mashinka
             this.sex = sex;
         }
 
-        public void GetInfo()
+        public string GetInfo()
         {
-            switch(alive)
+            string info = "";
+            switch (alive)
             {
                 case 0:
-                    Console.WriteLine("Состояние - Живой");
+                    info += ("Состояние: Живой\n");
                     break;
 
                 case 1:
-                    Console.WriteLine("Состояние - Долбоеб");
+                    info += ("Состояние: Долбоеб\n");
                     break;
 
                 case 2:
-                    Console.WriteLine("Состояние - Ded inside");
+                    info += ("Состояние: Ded inside\n");
                     break;
 
                 case 3:
-                    Console.WriteLine("Состояние - Мёртвый");
+                    info += ("Состояние: Мёртвый\n");
                     break;
             }
 
-            Console.WriteLine($"Имя - {name}");
-            Console.WriteLine($"Возраст - {age}");
+            info += ($"Имя: {name}\n");
+            info += ($"Возраст: {age}\n");
 
             if(sex)
-                Console.WriteLine($"Пол - Мужской");
+                info += ($"Пол: Мужской\n");
             else
-                Console.WriteLine($"Пол - Женский");
+                info += ($"Пол: Женский\n");
+
+            return info;
+        }
+        public string ShotInfo()
+        {
+            string info = "";   
+            switch (alive)
+            {
+                case 0:
+                    info += "Состояние: Живой\t| ";
+                    break;
+
+                case 1:
+                    info += "Состояние: Долбоеб\t| ";
+                    break;
+
+                case 2:
+                    info += "Состояние: Ded inside\t| ";
+                    break;
+
+                case 3:
+                    info += "Состояние: Мёртвый\t| ";
+                    break;
+            }
+            info +=  $"Имя: {name}\t\t| ";
+            info +=  $"Возраст: {age}\t| ";
+
+            if (sex)
+                info +=  $"Пол: Мужской\t| ";
+            else
+                info += $"Пол: Женский\t| ";
+            return info;
+        }
+
+        public void ChangeAlive(int newStatus)
+        {
+            alive = newStatus;
         }
     }
 }
